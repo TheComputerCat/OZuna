@@ -1,0 +1,23 @@
+local Describe It TestSuit AFun in 
+   fun {Describe MessageDesc FunDesc}
+      {Show MessageDesc}
+      {FunDesc}
+   end
+   proc {AFun}
+      {Show 'A Fun'}
+   end
+   proc {It Message Fun _}
+      {Show Message}
+      {Fun}
+   end
+   {Show '***************************ala'}
+   {Describe 'Message 60' 
+       fun{$}
+	  {Describe 'Message 4000'
+	   fun{$}
+	      {It 'In a It' AFun}
+	   end
+	  }
+       end
+   TestSuit}
+end
